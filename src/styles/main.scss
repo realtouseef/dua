@@ -1,0 +1,12 @@
+//variables
+@import "variable";
+
+//components
+@import "navbar";
+@import "about";
+@import "hero";
+@import "contact";
+@import "footer";
+
+//the main (app.scss) file
+@import "global";
