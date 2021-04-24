@@ -38,6 +38,7 @@ const Hero = () => {
               <option value="Hurt">Hurt</option>
               <option value="Impatient">Impatient</option>
               <option value="Insecure">Insecure</option>
+              <option value="Sad">Sad</option>
             </select>
           </div>
 
@@ -46,6 +47,7 @@ const Hero = () => {
               <div className="prayer__table">
                 <h2 className="title">{data.title}</h2>
                 <p className="arabic">{data.arabic}</p>
+                <p className="urdu">{data.urdu}</p>
                 <p className="translitration">{data.translitration}</p>
                 <p className="translation">{data.translation}</p>
               </div>
