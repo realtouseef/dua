@@ -1,4 +1,4 @@
-header {
+Header {
   padding: 1em 0;
 
   .container {
@@ -9,7 +9,7 @@ header {
     justify-content: space-between;
     align-items: center;
   }
-  @media (max-width: 750px) {
+  @media (max-width: 768px) {
     .container {
       flex-direction: column;
     }
@@ -45,16 +45,16 @@ header {
           font-weight: 700;
           text-decoration: none;
           padding: 0.25em 0;
-
+          transition: 0.3s;
           &:hover {
-            border-bottom: 1px solid $purple;
-            color: $purple;
+            border-bottom: 1px solid $blue;
+            color: $blue;
           }
         }
       }
     }
   }
-  @media (max-width: 750px) {
+  @media (max-width: 768px) {
     nav {
       .menu__links {
         li {
@@ -75,6 +75,12 @@ header {
       flex-direction: column;
       align-items: center;
       font-size: 1rem;
+    }
+  }
+
+  @media (max-width: 1100px) {
+    nav {
+      margin-right: 1em;
     }
   }
 }

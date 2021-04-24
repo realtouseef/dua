@@ -1,17 +1,21 @@
 const About = () => {
   return (
-    <div className="about">
-      <div className="container">
-        <div className="about__title">
-          <h2>About</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
-            quos harum veritatis quae ex voluptatem alias beatae quis dolorum
-            suscipit!
-          </p>
+    <section>
+      <div className="split-screen">
+        <div className="left"></div>
+        <div className="right">
+          <div className="content">
+            <h1>About Us</h1>
+            <p>
+              Duaa. is a website that lets you have the <strong>Duas</strong>
+              &nbsp; that you're mostly unaware of, and let you have them on
+              your fingertips so you can memorize them or recite them when you
+              need.
+            </p>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

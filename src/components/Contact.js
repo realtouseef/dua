@@ -1,11 +1,21 @@
 const Contact = () => {
   return (
     <div className="contact">
-      <div className="contact__tile">
-        <h2>Still Curious Yet?</h2>
-      </div>
-      <div className="contact__btn">
-        <a href="/">Contact us</a>
+      <div className="container">
+        <h1>Get in touch with us.</h1>
+        <div className="row">
+          <input type="text" className="name" placeholder="name" />
+          <input type="email" className="email" placeholder="email" />
+        </div>
+
+        <input
+          type="text"
+          className="message"
+          placeholder="Type your message"
+        />
+        <button type="submit" className="submit" value="submit">
+          Submit
+        </button>
       </div>
     </div>
   );

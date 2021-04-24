@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lateef&display=swap");
 
 .hero {
@@ -20,7 +21,7 @@
     }
     .below__title {
       font-size: 3rem;
-      color: $purple;
+      color: $blue;
       margin: -20px 0 -10px 0;
     }
   }
@@ -28,25 +29,24 @@
   .dropdown {
     display: flex;
     justify-content: flex-start;
+    margin: 2em 0;
 
     .hero__dropdown {
       display: flex;
       justify-content: flex-start;
-      background: $purple;
+      background: $blue;
       color: $white;
       font-size: 1.3rem;
-      padding: 0.5rem;
+      padding: 0.5em 1em;
       font-weight: normal;
-      margin-top: 25px;
+      border-radius: 8px;
+      border: none;
     }
   }
 
   .prayer {
-    //   display: flex;
-    //   justify-content: center;
-    //   align-items: center;
-    background: $contactBg;
-    // max-width: 900px;
+    background: $dropdown;
+    max-width: 900px;
     padding: 1em 2em;
     border-radius: 6px;
     margin: 1.3rem 0;
@@ -62,14 +62,21 @@
     }
     .arabic {
       font-family: "Lateef", cursive;
+      // font-family: "Amiri";
       text-align: end;
       padding: 0.5rem;
-      margin: 1rem 0;
       font-size: 2rem;
+      margin: 1rem 0;
+      line-height: 2.5em;
+    }
+
+    .urdu {
+      padding: 0.5rem;
+      font-size: 1rem;
     }
     .translitration {
       padding: 0.5rem;
-      font-size: 0.875rem;
+      font-size: 1rem;
     }
     .translation {
       padding: 0.5rem;
@@ -89,6 +96,17 @@
     }
     .dropdown {
       justify-content: center;
+    }
+  }
+
+  @media (max-width: 450px) {
+    .main__title {
+      margin-bottom: 0.4em;
+      .below__title {
+        margin-top: 0.5em;
+        font-size: 1.5rem;
+        line-height: 1.5em;
+      }
     }
   }
 }
