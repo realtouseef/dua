@@ -30,7 +30,7 @@ const Navbar = () => {
           </div>
           <Switch>
             <Route path="/about" component={About} />
-            <Route path="blog" component={Blog} />
+            <Route path="/blog" component={Blog} />
             <Route path="/contact" component={Contact} />
           </Switch>
         </header>

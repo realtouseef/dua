@@ -1,0 +1,62 @@
+.blog {
+  margin: 4em auto;
+
+  .container {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(265px, 1fr));
+    gap: 2em;
+
+    // .blog__title {
+    //   margin: 4em 0 2em 0;
+    //   color: $blue;
+    //   opacity: 0.5;
+    //   font-size: 1.5rem;
+    //   text-transform: uppercase;
+    //   letter-spacing: 2px;
+    // }
+
+    .article__card {
+      .card__img {
+        padding: 0;
+        overflow: hidden;
+
+        img {
+          max-width: 100%;
+          height: auto;
+          border-radius: 10px 10px 0 0;
+        }
+      }
+
+      .content {
+        background-color: $footer;
+        padding: 2em;
+        border-radius: 0 0 8px 8px;
+
+        .title {
+          font-size: 1.2rem;
+          letter-spacing: 0.12em;
+          text-transform: uppercase;
+          font-weight: 900;
+        }
+        .description {
+          margin: 1em 0 2em 0;
+        }
+        .btn {
+          text-decoration: none;
+          color: $white;
+          font-weight: bold;
+          background: $mainBg;
+          padding: 0.5em 1em;
+          border-radius: 3px;
+          transition: 0.3s ease-in-out;
+          text-transform: uppercase;
+          letter-spacing: 0.1em;
+          &:hover {
+            background: $cardBtnHover;
+          }
+        }
+      }
+    }
+  }
+}
